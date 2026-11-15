@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de CEP e Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de CEP e Clima</h1>
+        
+        <!-- Área de entrada de dados -->
+        <div class="search-box">
+            <label for="cepInput">Digite o CEP:</label>
+            <input type="text" id="cepInput" placeholder="Ex: 29780000" maxlength="8">
+            <button id="searchBtn">Buscar</button>
+        </div>
+
+        <!-- Área onde os dados do Endereço serão exibidos -->
+        <div id="addressResult" class="card hidden">
+            <h2>Endereço Encontrado</h2>
+            <p><strong>Logradouro:</strong> <span id="street">-</span></p>
+            <p><strong>Bairro:</strong> <span id="neighborhood">-</span></p>
+            <p><strong>Cidade/UF:</strong> <span id="cityState">-</span></p>
+        </div>
+
+        <!-- Área onde os dados do Clima serão exibidos -->
+        <div id="weatherResult" class="card hidden">
+            <h2>Previsão do Tempo</h2>
+            <p><strong>Temperatura:</strong> <span id="temp">-</span> °C</p>
+            <p><strong>Condição:</strong> <span id="condition">-</span></p>
+        </div>
+
+        <!-- Mensagem de Erro (caso o CEP seja inválido) -->
+        <p id="errorMessage" class="error hidden">CEP não encontrado ou inválido.</p>
+    </div>
+
+    <!-- Link para o arquivo JavaScript (no final do body para carregar a página primeiro) -->
+    <script src="script.js"></script>
+</body>
+</html>

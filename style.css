@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body {
+    background-color: #f0f2f5;
+    color:#333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+input {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+input:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Cards de Resultados */
+.card {
+    background: #f8f9fa;
+    border-left: 4px solid #3498db;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+/* Classes utilitárias */
+.hidden {
+    display: none;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
